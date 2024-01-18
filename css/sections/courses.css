@@ -12,24 +12,37 @@
 }
 
 .coursesGridContainer {
+  margin-top: 66px;
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px;
   color: #f4f4f4;
 }
 
-.coursesGridContainer div {
+.coursesGridContainer .gridItem {
   border: solid 0.2px rgba(85, 85, 85, 1);
   border-radius: 5px;
 }
 
-.coursesContainer div img {
+.gridItem img {
   width: 300px;
   height: 150px;
   border-radius: 5px;
 }
 
-.coursesContainer div h3 {
+.gridItem div {
+  padding: 42px 22px;
+}
+
+.gridItem div h3 {
   font-size: 18px;
   font-weight: 100;
+}
+
+.gridItem div p {
+  margin-top: 30px;
+}
+
+.gridItem div a {
+  color: #00aeef;
 }
