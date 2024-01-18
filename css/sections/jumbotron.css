@@ -1,0 +1,45 @@
+.jumbotron {
+  background-color: #2b2b2b;
+}
+
+.bgImage {
+  width: 100%;
+  position: relative;
+}
+
+.bgText {
+  font-size: 42px;
+  line-height: 1.6em;
+  color: #f4f4f4;
+  position: absolute;
+  top: 194px;
+  left: 270px;
+}
+
+.infoTextContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoText {
+  font-size: 28px;
+  line-height: 1.6em;
+  color: #f4f4f4;
+  padding: 0 270px;
+  margin-top: 66px;
+}
+
+.seeMore {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 900;
+  color: #00a3e0;
+  margin-top: 60px;
+  margin-bottom: 66px;
+  padding-left: 270px;
+  transition: 0.4s ease 0s;
+}
+
+.seeMore:hover {
+  color: rgb(170, 170, 170);
+}

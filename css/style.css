@@ -1,3 +1,7 @@
+@import "./sections/jumbotron.css";
+@import "./sections/courses.css";
+
+
 * {
   margin: 0;
   padding: 0;
@@ -55,29 +59,4 @@ a {
 
 .activePage {
   color: #00a3e0;
-}
-
-.jumbotron {
-  background-color: #2b2b2b;
-}
-
-.bgImage {
-  width: 100%;
-  position: relative;
-}
-
-.bgText {
-  font-size: 42px;
-  line-height: 1.6em;
-  color: #f4f4f4;
-  position: absolute;
-  top: 194px;
-  left: 270px;
-}
-
-.infoText {
-  font-size: 28px;
-  line-height: 1.6em;
-  color: #f4f4f4;
-  padding: 0 270px;
 }

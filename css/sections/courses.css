@@ -1,0 +1,35 @@
+.courses {
+  background-color: #161616;
+}
+
+.coursesContainer {
+  padding: 55px 270px;
+}
+
+.coursesTitle {
+  font-size: 24px;
+  color: #dbdbdb;
+}
+
+.coursesGridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  color: #f4f4f4;
+}
+
+.coursesGridContainer div {
+  border: solid 0.2px rgba(85, 85, 85, 1);
+  border-radius: 5px;
+}
+
+.coursesContainer div img {
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.coursesContainer div h3 {
+  font-size: 18px;
+  font-weight: 100;
+}
