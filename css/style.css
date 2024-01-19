@@ -1,9 +1,9 @@
+@import "./header/header.css";
 @import "./sections/jumbotron.css";
 @import "./sections/courses.css";
 @import "./sections/partners.css";
 @import "./sections/questions.css";
-
-
+@import "./footer/footer.css";
 
 * {
   margin: 0;
@@ -18,48 +18,4 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.headerWrapper {
-  padding: 0 270px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 84px;
-  background-color: #1a1e1f;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo {
-  width: 182px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.navList {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navList li {
-  cursor: pointer;
-  margin-left: 18px;
-}
-
-.pageName {
-  color: #f4f4f4;
-  text-align: right;
-  padding: 0 10px;
-  transition: 0.4s ease 0s;
-}
-
-.pageName:hover {
-  color: #00a3e0;
-}
-
-.activePage {
-  color: #00a3e0;
 }
