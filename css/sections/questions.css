@@ -42,8 +42,12 @@
   font-weight: 400;
 }
 
-.questionBox svg {
+.arrow {
   fill: #f4f4f4;
+}
+
+.active {
+  transform: rotate(180deg);
 }
 
 hr {
@@ -60,4 +64,8 @@ hr {
 .levelInfo {
   margin: 0 21px;
   padding: 2px 0 3px;
+}
+
+.none {
+  display: none;
 }
