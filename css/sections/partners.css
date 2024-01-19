@@ -3,7 +3,7 @@
 }
 
 .partnersContainer {
-  padding: 55px 270px;
+  padding: 55px 270px 100px 270px;
 }
 
 .partnersTitle {
@@ -12,12 +12,21 @@
 }
 
 .sliderContainer {
-  margin-top: 66px;
+  margin: 100px 0 20px 0;
+  display: flex;
+  align-items: center;
 }
 
 .partnerImagesContainer {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.partnerImagesContainer img {
+  width: 240px;
+  height: auto;
 }
 
 .previous {
@@ -35,4 +44,20 @@
   position: absolute;
   right: 100px;
   transform: rotate(180deg);
+}
+
+.dotsContainer {
+  width: 54px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  cursor: pointer;
 }
