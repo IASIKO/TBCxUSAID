@@ -38,6 +38,22 @@
   align-items: end;
 }
 
+.buttonBox button {
+  cursor: pointer;
+  background-color: #00aef3;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 30px;
+  transition: 0.4s ease 0s;
+}
+
+.buttonBox button:hover {
+  background-color: rgb(170, 170, 170);
+  color: black;
+}
+
 .footerInfo {
   display: flex;
   flex-direction: column;
