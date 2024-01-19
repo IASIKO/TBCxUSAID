@@ -1,6 +1,8 @@
 @import "./sections/jumbotron.css";
 @import "./sections/courses.css";
 @import "./sections/partners.css";
+@import "./sections/questions.css";
+
 
 
 * {

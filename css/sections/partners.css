@@ -33,17 +33,28 @@
   width: 18px;
   height: 35px;
   fill: rgb(232, 230, 230);
+  stroke: rgb(232, 230, 230);
   position: absolute;
   left: 100px;
+  cursor: pointer;
 }
 
 .next {
   width: 18px;
   height: 35px;
   fill: rgb(232, 230, 230);
+  stroke: rgb(232, 230, 230);
   position: absolute;
   right: 100px;
+  cursor: pointer;
   transform: rotate(180deg);
+}
+
+.previous:hover {
+  filter: brightness(80%);
+}
+.next:hover {
+  filter: brightness(80%);
 }
 
 .dotsContainer {
