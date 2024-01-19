@@ -1,0 +1,38 @@
+.partners {
+  background-color: #2b2b2b;
+}
+
+.partnersContainer {
+  padding: 55px 270px;
+}
+
+.partnersTitle {
+  font-size: 24px;
+  color: #dbdbdb;
+}
+
+.sliderContainer {
+  margin-top: 66px;
+}
+
+.partnerImagesContainer {
+  display: flex;
+  align-items: center;
+}
+
+.previous {
+  width: 18px;
+  height: 35px;
+  fill: rgb(232, 230, 230);
+  position: absolute;
+  left: 100px;
+}
+
+.next {
+  width: 18px;
+  height: 35px;
+  fill: rgb(232, 230, 230);
+  position: absolute;
+  right: 100px;
+  transform: rotate(180deg);
+}
