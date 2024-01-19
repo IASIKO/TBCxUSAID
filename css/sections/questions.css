@@ -3,7 +3,7 @@
 }
 
 .questionsContainer {
-  padding: 136px 310px;
+  padding: 136px 310px 66px 310px;
 }
 
 .questionsTitle {
@@ -48,4 +48,16 @@
 
 hr {
   border: 0.2px solid rgba(85, 85, 85, 1);
+}
+
+.answerText {
+  color: #f4f4f4;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.levelInfo {
+  margin: 0 21px;
+  padding: 2px 0 3px;
 }
