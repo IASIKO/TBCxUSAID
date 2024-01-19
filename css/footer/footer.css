@@ -1,0 +1,60 @@
+.footerWrapper {
+  background-color: rgb(26, 30, 31);
+}
+
+.footerContainer {
+  padding: 65px 270px 42px;
+}
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.tbcLogo {
+  width: 106px;
+  height: 30px;
+}
+
+.mediaIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.mediaIcons img {
+  cursor: pointer;
+  width: 39px;
+  height: 39px;
+}
+
+.footerInfoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonBox {
+  display: flex;
+  align-items: end;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footerInfo p {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footerInfo a {
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footerInfo a:hover {
+  filter: brightness(80%);
+}
