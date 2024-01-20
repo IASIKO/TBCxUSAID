@@ -1,47 +1,47 @@
 const coursesData = [
   {
     title: "iOS Development",
-    image: "./images/courses/ios-development.jpg",
+    image: "./assets/images/courses/ios-development.jpg",
     status: "რეგისტრაცია დასრულებულია",
   },
   {
     title: "React",
-    image: "./images/courses/react.jpg",
+    image: "./assets/images/courses/react.jpg",
     status: "რეგისტრაცია დასრულებულია",
   },
   {
     title: "Intro to Python",
-    image: "./images/courses/intro-to-python.jpg",
+    image: "./assets/images/courses/intro-to-python.jpg",
     status: "რეგისტრაცია დასრულებულია",
   },
   {
     title: "Advanced Python",
-    image: "./images/courses/advanced-python.jpg",
+    image: "./assets/images/courses/advanced-python.jpg",
     status: "რეგისტრაცია დასრულებულია",
   },
   {
     title: "Advanced Cybersecurity Course",
-    image: "./images/courses/advanced-cybersecurity-course.jpg",
+    image: "./assets/images/courses/advanced-cybersecurity-course.jpg",
     status: "რეგისტრაცია დასრულებულია",
   },
   {
     title: "ToT - Training of Trainers",
-    image: "./images/courses/training-of-trainers.jpg",
+    image: "./assets/images/courses/training-of-trainers.jpg",
     status: "რეგისტრაცია დასრულებულია",
   },
   {
     title: "Blockchain",
-    image: "./images/courses/blockchain.jpg",
+    image: "./assets/images/courses/blockchain.jpg",
     status: "რეგისტრაცია დასრულებულია",
   },
   {
     title: "DevOps",
-    image: "./images/courses/devops.jpg",
+    image: "./assets/images/courses/devops.jpg",
     status: "რეგისტრაცია დასრულებულია",
   },
   {
     title: "Information Security Governance",
-    image: "./images/courses/information-security-governance.jpg",
+    image: "./assets/images/courses/information-security-governance.jpg",
     status: "რეგისტრაცია დასრულებულია",
   },
 ];
