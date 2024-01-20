@@ -8,7 +8,7 @@
 
 .coursesTitle {
   font-size: 24px;
-  color: #dbdbdb;
+  color: #f4f4f4;
 }
 
 .coursesGridContainer {
@@ -62,11 +62,62 @@
   filter: brightness(80%);
 }
 
+@media screen and (max-width: 1280px) {
+  .coursesContainer {
+    padding: 55px 150px;
+  }
+  .coursesGridContainer {
+    gap: 30px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .coursesContainer {
     padding: 55px 15px;
   }
   .coursesGridContainer {
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .coursesContainer {
+    padding: 35px 25px;
+  }
+
+  .coursesTitle {
+    font-size: 30px;
+  }
+
+  .coursesGridContainer {
+    margin-top: 36px;
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+
+  .gridItem img {
+    height: 185px;
+  }
+
+  .courseDescription h3 {
+    font-size: 20px;
+  }
+
+  .courseDescription p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .courseDescription div {
+    margin-top: 16px;
+  }
+
+  .courseDescription div svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .courseDescription div a {
+    font-size: 20px;
   }
 }

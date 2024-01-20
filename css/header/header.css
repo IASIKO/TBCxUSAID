@@ -50,8 +50,27 @@
   color: #00a3e0;
 }
 
+@media screen and (max-width: 1280px) {
+  .headerWrapper {
+    padding: 0 150px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .headerWrapper {
     padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headerWrapper {
+    padding: 0 25px;
+  }
+  .navList {
+    display: none;
+  }
+  .logo {
+    width: 170px;
+    height: 37px;
   }
 }

@@ -49,8 +49,28 @@
   color: rgb(170, 170, 170);
 }
 
+@media screen and (max-width: 1280px) {
+  .bgText {
+    left: 150px;
+  }
+
+  .bgImage {
+    width: 100%;
+    height: 352px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .infoText {
+    padding: 0 150px;
+  }
+  .seeMore {
+    padding-left: 150px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .bgText {
+    top: 144px;
     left: 15px;
   }
 
@@ -63,5 +83,34 @@
   }
   .seeMore {
     padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bgImage {
+    width: 100%;
+    height: 295px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .bgText {
+    font-size: 32px;
+    left: 25px;
+  }
+
+  .education {
+    font-size: 30px;
+  }
+
+  .infoText {
+    font-size: 21px;
+    padding: 0 25px;
+    margin-top: 44px;
+  }
+
+  .seeMore {
+    font-size: 21px;
+    padding-left: 25px;
   }
 }

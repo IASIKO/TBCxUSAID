@@ -71,8 +71,49 @@ hr {
   display: none;
 }
 
+@media screen and (max-width: 1280px) {
+  .questionsContainer {
+    padding: 136px 180px 66px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .questionsContainer {
-    padding: 136px 45px 66px 45px;
+    padding: 136px 45px 66px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .questionsContainer {
+    padding: 76px 30px 166px;
+    position: relative;
+  }
+
+  .questionsTitle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .questionsTitle h2 {
+    font-size: 28px;
+  }
+
+  .questionsTitle a {
+    font-size: 22px;
+    position: absolute;
+    bottom: 75px;
+  }
+
+  .questionBox h3 {
+    font-size: 22px;
+  }
+
+  .answerText {
+    font-size: 14px;
+  }
+
+  .arrow {
+    width: 54px;
+    height: 54px;
   }
 }

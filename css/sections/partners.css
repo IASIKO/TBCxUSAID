@@ -78,8 +78,50 @@
   filter: brightness(80%);
 }
 
+@media screen and (max-width: 1280px) {
+  .partnersContainer {
+    padding: 55px 150px 100px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .partnersContainer {
-    padding: 55px 15px 100px 15px;
+    padding: 55px 15px 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partnersContainer {
+    padding: 25px 25px 100px;
+  }
+
+  .partnerImagesContainer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .partnerImagesContainer img {
+    width: 270px;
+  }
+
+  .previous {
+    display: none;
+  }
+
+  .next {
+    display: none;
+  }
+
+  .dotsContainer {
+    width: 84px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
   }
 }
