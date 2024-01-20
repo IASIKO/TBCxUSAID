@@ -16,6 +16,10 @@
   left: 270px;
 }
 
+.education {
+  font-size: 34px;
+}
+
 .infoTextContainer {
   display: flex;
   flex-direction: column;
