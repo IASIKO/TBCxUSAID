@@ -70,3 +70,9 @@ hr {
 .none {
   display: none;
 }
+
+@media screen and (max-width: 1024px) {
+  .questionsContainer {
+    padding: 136px 45px 66px 45px;
+  }
+}

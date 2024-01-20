@@ -77,3 +77,9 @@
 .active {
   filter: brightness(80%);
 }
+
+@media screen and (max-width: 1024px) {
+  .partnersContainer {
+    padding: 55px 15px 100px 15px;
+  }
+}

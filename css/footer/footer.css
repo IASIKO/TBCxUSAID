@@ -5,6 +5,7 @@
 .footerContainer {
   padding: 65px 270px 42px;
 }
+
 .iconsContainer {
   display: flex;
   align-items: center;
@@ -73,4 +74,10 @@
 
 .footerInfo a:hover {
   filter: brightness(80%);
+}
+
+@media screen and (max-width: 1024px) {
+  .footerContainer {
+    padding: 65px 15px 42px;
+  }
 }

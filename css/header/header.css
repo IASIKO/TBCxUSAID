@@ -30,7 +30,8 @@
 
 .navList li {
   cursor: pointer;
-  margin-left: 18px;
+  padding: 0 4px;
+  margin-left: 20px;
 }
 
 .pageName {
