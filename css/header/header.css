@@ -48,3 +48,9 @@
 .activePage {
   color: #00a3e0;
 }
+
+@media screen and (max-width: 1024px) {
+  .headerWrapper {
+    padding: 0 15px;
+  }
+}
