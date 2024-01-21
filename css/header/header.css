@@ -27,6 +27,7 @@
   display: none;
   flex-direction: column;
   gap: 8px;
+  transition: transform 0.3s ease;
 }
 
 .burgerBarContainer .line:nth-child(1) {
@@ -91,16 +92,18 @@
   display: block;
 }
 
-.burgerBarContainer.active .line:nth-child(1) {
-  transform: rotate(45deg);
-}
-
-.burgerBarContainer.active .line:nth-child(2) {
+.burgerBarContainer.active {
   transform: rotate(-45deg);
 }
 
+.burgerBarContainer.active .line:nth-child(1) {
+  transform: rotate(-90deg) translateX(4px);
+  transform-origin: right;
+}
+
 .burgerBarContainer.active .line:nth-child(3) {
-  transform: rotate(45deg);
+  transform: rotate(-90deg) translateX(-4px);
+  transform-origin: left;
 }
 
 .closeButton {
