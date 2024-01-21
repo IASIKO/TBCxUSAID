@@ -6,7 +6,7 @@
 @import "./footer/footer.css";
 @font-face {
   font-family: mainFont;
-  src: url(../assets/fonts/file.woff2.txt);
+  src: url(../assets/fonts/file.woff2);
 }
 
 * {
