@@ -22,6 +22,96 @@
   cursor: pointer;
 }
 
+.burgerBarContainer {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.burgerBarContainer .line:nth-child(1) {
+  background-color: #dbdbdb;
+  width: 16px;
+  height: 4px;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+
+.burgerBarContainer .line:nth-child(2) {
+  background-color: #dbdbdb;
+  border-radius: 2px;
+  width: 32px;
+  height: 4px;
+  transition: transform 0.3s ease;
+}
+
+.burgerBarContainer .line:nth-child(3) {
+  align-self: flex-end;
+  background-color: #dbdbdb;
+  border-radius: 2px;
+  width: 16px;
+  height: 4px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #1a1e1f;
+  padding-top: 84px;
+  transition: right 0.4s ease;
+  z-index: 99;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 98;
+}
+.burgerBarContainer.active {
+  position: absolute;
+  top: 28px;
+  right: 25px;
+  z-index: 200;
+}
+
+.burgerBarContainer.active ~ .sidebar {
+  right: 0;
+}
+
+.burgerBarContainer.active ~ .backdrop {
+  display: block;
+}
+
+.burgerBarContainer.active .line:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.burgerBarContainer.active .line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.burgerBarContainer.active .line:nth-child(3) {
+  transform: rotate(45deg);
+}
+
+.closeButton {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 .navList {
   display: flex;
   align-items: center;
@@ -72,5 +162,9 @@
   .logo {
     width: 170px;
     height: 37px;
+  }
+
+  .burgerBarContainer {
+    display: flex;
   }
 }

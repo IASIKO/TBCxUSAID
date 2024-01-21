@@ -19,7 +19,7 @@ function createDots() {
   for (let i = 0; i < groupCount; i++) {
     const dot = document.createElement("div");
     dot.className = "dot";
-    dot.addEventListener("click", () => goToSlide(i));
+    dot.addEventListener("click", () => goToSlide(i * 3));
     dotsContainer.appendChild(dot);
   }
 }
@@ -75,4 +75,6 @@ nextBtn.addEventListener("click", nextSlide);
 createDots();
 updateSlider();
 
-setInterval(nextSlide, 3000);
+setInterval(() => {
+  nextSlide();
+}, 3000);
