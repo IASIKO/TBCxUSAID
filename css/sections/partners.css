@@ -93,6 +93,7 @@
 @media screen and (max-width: 600px) {
   .partnersContainer {
     padding: 25px 25px 100px;
+    position: relative;
   }
 
   .partnerImagesContainer {
@@ -117,6 +118,10 @@
 
   .dotsContainer {
     width: 84px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 24px;
   }
 
   .dot {
