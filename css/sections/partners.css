@@ -30,17 +30,6 @@
   height: auto;
 }
 
-.previous {
-  width: 18px;
-  height: 35px;
-  fill: rgb(232, 230, 230);
-  stroke: rgb(232, 230, 230);
-  position: absolute;
-  left: 100px;
-  cursor: pointer;
-  user-select: none;
-}
-
 .next {
   width: 18px;
   height: 35px;
@@ -53,9 +42,21 @@
   transform: rotate(180deg);
 }
 
+.previous {
+  width: 18px;
+  height: 35px;
+  fill: rgb(232, 230, 230);
+  stroke: rgb(232, 230, 230);
+  position: absolute;
+  left: 100px;
+  cursor: pointer;
+  user-select: none;
+}
+
 .previous:hover {
   filter: brightness(80%);
 }
+
 .next:hover {
   filter: brightness(80%);
 }
@@ -74,6 +75,11 @@
   border-radius: 3px;
   background-color: #ffffff;
   cursor: pointer;
+}
+
+.fade-transition {
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.37, 0, 0.63, 1);
 }
 
 .active {

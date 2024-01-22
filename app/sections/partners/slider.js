@@ -12,6 +12,8 @@ const sliderContainer = document.getElementById("slider");
 const previousBtn = document.querySelector(".previous");
 const nextBtn = document.querySelector(".next");
 const dotsContainer = document.querySelector(".dotsContainer");
+const imgsContainer = document.querySelector(".partnerImagesContainer");
+
 let currentSlide = 0;
 
 const splitSlides = () => {
@@ -47,7 +49,6 @@ function updateDots(index) {
 }
 
 function updateSlider(index) {
-  const imgsContainer = document.querySelector(".partnerImagesContainer");
   sliderContainer.innerHTML = "";
 
   for (let i = 0; i < slides.length; i++) {
@@ -56,7 +57,12 @@ function updateSlider(index) {
         const img = document.createElement("img");
         img.src = slides[i][j].imgUrl;
         img.alt = `Partner ${slides[i][j].id}`;
+        img.classList.add("fade-transition"); 
         sliderContainer.appendChild(img);
+
+        void img.offsetWidth;
+
+        img.style.opacity = 1;
       }
     }
   }
@@ -67,6 +73,7 @@ function updateSlider(index) {
     ? (imgsContainer.style.justifyContent = "center")
     : (imgsContainer.style.justifyContent = "space-between");
 }
+
 
 function goToSlide(index) {
   currentSlide = index;
