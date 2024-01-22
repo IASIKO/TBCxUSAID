@@ -14,10 +14,8 @@ for (let i = 0; i < acc.length; i++) {
     arrow[i].classList.toggle("active");
 
     let answerText = this.nextElementSibling;
-    if (answerText.style.height === "0px" || answerText.style.height === "") {
-      answerText.style.height = answerText.scrollHeight + "px";
-    } else {
-      answerText.style.height = "0";
-    }
+    answerText.style.height === "0px" || answerText.style.height === ""
+      ? (answerText.style.height = answerText.scrollHeight + "px")
+      : (answerText.style.height = "0");
   });
 }
