@@ -14,65 +14,83 @@ const nextBtn = document.querySelector(".next");
 const dotsContainer = document.querySelector(".dotsContainer");
 let currentSlide = 0;
 
+const splitSlides = () => {
+  const groupSize = 3;
+  const chunkCount = Math.ceil(sliderInfo.length / groupSize);
+
+  const result = Array.from({ length: chunkCount }, (_, index) => {
+    const start = index * groupSize;
+    const end = start + groupSize;
+    return sliderInfo.slice(start, end);
+  });
+
+  return result;
+};
+
+const slides = splitSlides();
+
 function createDots() {
-  const groupCount = Math.ceil(sliderInfo.length / 3);
+  const groupCount = Math.ceil(slides.length);
   for (let i = 0; i < groupCount; i++) {
     const dot = document.createElement("div");
     dot.className = "dot";
-    dot.addEventListener("click", () => goToSlide(i * 3));
+    dot.addEventListener("click", () => goToSlide(i));
     dotsContainer.appendChild(dot);
   }
 }
 
-function updateDots() {
+function updateDots(index) {
   const dots = document.querySelectorAll(".dot");
-  dots.forEach((dot, index) => {
-    dot.classList.toggle("active", index === currentSlide);
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === index);
   });
 }
 
-function updateSlider() {
+function updateSlider(index) {
   sliderContainer.innerHTML = "";
-  const groupSize = 3;
-  const startIdx = Math.floor(currentSlide / groupSize) * groupSize;
 
-  if (currentSlide === sliderInfo.length - 1) {
-    const img = document.createElement("img");
-    img.src = sliderInfo[6].imgUrl;
-    img.alt = `Partner 7`;
-    sliderContainer.appendChild(img);
-  } else {
-    for (let i = 0; i < groupSize; i++) {
-      const index = (startIdx + i) % sliderInfo.length;
-      const img = document.createElement("img");
-      img.src = sliderInfo[index].imgUrl;
-      img.alt = `Partner ${index + 1}`;
-      sliderContainer.appendChild(img);
+  console.log(index);
+
+  for (let i = 0; i < slides.length; i++) {
+    if (i === index) {
+      for (let j = 0; j < slides[i].length; j++) {
+        const img = document.createElement("img");
+        img.src = slides[i][j].imgUrl;
+        img.alt = `Partner ${slides[i][j].id}`;
+        sliderContainer.appendChild(img);
+      }
     }
   }
 
-  updateDots();
+  updateDots(index);
 }
 
 function goToSlide(index) {
   currentSlide = index;
-  updateSlider();
+  updateSlider(currentSlide);
 }
 
 function nextSlide() {
-  currentSlide = (currentSlide + 1) % sliderInfo.length;
-  updateSlider();
+  if (currentSlide === slides.length - 1) {
+    currentSlide = 0;
+  } else {
+    currentSlide = currentSlide + 1;
+  }
+  updateSlider(currentSlide);
 }
 
 function previousSlide() {
-  currentSlide = (currentSlide - 1 + sliderInfo.length) % sliderInfo.length;
-  updateSlider();
+  if (currentSlide === 0) {
+    currentSlide = slides.length - 1;
+  }
+  currentSlide = currentSlide - 1;
+  updateSlider(currentSlide);
 }
 
-previousBtn.addEventListener("click", previousSlide);
 nextBtn.addEventListener("click", nextSlide);
+previousBtn.addEventListener("click", previousSlide);
 
 createDots();
-updateSlider();
+updateSlider(currentSlide);
 
 setInterval(nextSlide, 3000);
