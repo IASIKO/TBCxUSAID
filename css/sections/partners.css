@@ -38,6 +38,7 @@
   position: absolute;
   left: 100px;
   cursor: pointer;
+  user-select: none;
 }
 
 .next {
@@ -48,6 +49,7 @@
   position: absolute;
   right: 100px;
   cursor: pointer;
+  user-select: none;
   transform: rotate(180deg);
 }
 
