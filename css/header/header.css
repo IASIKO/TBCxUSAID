@@ -152,6 +152,10 @@
   font-size: 18px;
 }
 
+.disable-scroll {
+  overflow: hidden;
+}
+
 .activePage {
   color: #00a3e0;
 }
