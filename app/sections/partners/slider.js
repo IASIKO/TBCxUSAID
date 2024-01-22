@@ -57,11 +57,9 @@ function updateSlider(index) {
         const img = document.createElement("img");
         img.src = slides[i][j].imgUrl;
         img.alt = `Partner ${slides[i][j].id}`;
-        img.classList.add("fade-transition"); 
+        img.classList.add("fade-transition");
         sliderContainer.appendChild(img);
-
         void img.offsetWidth;
-
         img.style.opacity = 1;
       }
     }
@@ -72,8 +70,13 @@ function updateSlider(index) {
   index === slides.length - 1
     ? (imgsContainer.style.justifyContent = "center")
     : (imgsContainer.style.justifyContent = "space-between");
-}
 
+  setTimeout(() => {
+    for (const img of sliderContainer.querySelectorAll("img")) {
+      img.style.opacity = 0;
+    }
+  }, 2500);
+}
 
 function goToSlide(index) {
   currentSlide = index;
