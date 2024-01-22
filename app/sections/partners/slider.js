@@ -63,11 +63,9 @@ function updateSlider(index) {
 
   updateDots(index);
 
-  if (index === slides.length - 1) {
-    imgsContainer.style.justifyContent = "center";
-  } else {
-    imgsContainer.style.justifyContent = "space-between";
-  }
+  index === slides.length - 1
+    ? (imgsContainer.style.justifyContent = "center")
+    : (imgsContainer.style.justifyContent = "space-between");
 }
 
 function goToSlide(index) {
@@ -76,19 +74,17 @@ function goToSlide(index) {
 }
 
 function nextSlide() {
-  if (currentSlide === slides.length - 1) {
-    currentSlide = 0;
-  } else {
-    currentSlide = currentSlide + 1;
-  }
+  currentSlide === slides.length - 1
+    ? (currentSlide = 0)
+    : (currentSlide = currentSlide + 1);
+
   updateSlider(currentSlide);
 }
 
 function previousSlide() {
-  if (currentSlide === 0) {
-    currentSlide = slides.length - 1;
-  }
-  currentSlide = currentSlide - 1;
+  currentSlide === 0
+    ? (currentSlide = slides.length - 1)
+    : (currentSlide = currentSlide - 1);
   updateSlider(currentSlide);
 }
 
