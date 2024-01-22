@@ -5,11 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     let scrollTop = window.scrollY;
 
-    if (scrollTop > headerHeight) {
-      header.classList.add("headerTransparent");
-    } else {
-      header.classList.remove("headerTransparent");
-    }
+    scrollTop > headerHeight
+      ? header.classList.add("headerTransparent")
+      : header.classList.remove("headerTransparent");
   });
 });
 
