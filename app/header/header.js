@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // BURGERBAR
-  const burgerMenu = document.querySelector(".burgerBarContainer");
+  const burgerMenu = document.querySelector(".burgerMenuContainer");
   const lines = document.querySelectorAll(".line");
   const closeBackdrop = document.querySelector(".backdrop");
 
