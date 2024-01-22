@@ -101,6 +101,32 @@ function previousSlide() {
 nextBtn.addEventListener("click", nextSlide);
 previousBtn.addEventListener("click", previousSlide);
 
+if (window.matchMedia("(max-width: 600px)").matches) {
+  sliderContainer.addEventListener("touchstart", handleTouchStart, false);
+  sliderContainer.addEventListener("touchmove", handleTouchMove, false);
+  sliderContainer.addEventListener("touchend", handleTouchEnd, false);
+}
+let startX = 0;
+
+function handleTouchStart(event) {
+  startX = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+  event.preventDefault();
+}
+
+function handleTouchEnd(event) {
+  const endX = event.changedTouches[0].clientX;
+  const deltaX = startX - endX;
+
+  if (deltaX > 50) {
+    nextSlide();
+  } else if (deltaX < -50) {
+    previousSlide();
+  }
+}
+
 createDots();
 updateSlider(currentSlide);
 
