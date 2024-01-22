@@ -47,9 +47,8 @@ function updateDots(index) {
 }
 
 function updateSlider(index) {
+  const imgsContainer = document.querySelector(".partnerImagesContainer");
   sliderContainer.innerHTML = "";
-
-  console.log(index);
 
   for (let i = 0; i < slides.length; i++) {
     if (i === index) {
@@ -63,6 +62,12 @@ function updateSlider(index) {
   }
 
   updateDots(index);
+
+  if (index === slides.length - 1) {
+    imgsContainer.style.justifyContent = "center";
+  } else {
+    imgsContainer.style.justifyContent = "space-between";
+  }
 }
 
 function goToSlide(index) {
