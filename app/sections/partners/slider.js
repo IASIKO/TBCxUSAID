@@ -75,6 +75,4 @@ nextBtn.addEventListener("click", nextSlide);
 createDots();
 updateSlider();
 
-setInterval(() => {
-  nextSlide();
-}, 3000);
+setInterval(nextSlide, 3000);
