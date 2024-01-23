@@ -31,7 +31,7 @@ The CSS is written to be compatible with the following web browsers:
 Firefox\
 Chrome\
 Edge\
-Safari\
+Safari
 
 The application is designed to provide a consistent and optimized experience across these browsers.
 
