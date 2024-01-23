@@ -34,5 +34,5 @@ The application is designed to provide a consistent and optimized experience acr
 
 ## Usage
 
-Clone the repository: git clone https://github.com/IASIKO/TBCxUSAID
-Open index.html in your preferred web browser.
+1. Clone the repository: git clone https://github.com/IASIKO/TBCxUSAID
+2. Open index.html in your preferred web browser.
