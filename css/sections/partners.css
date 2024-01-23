@@ -13,15 +13,25 @@
 
 .sliderContainer {
   margin: 100px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .partnerImagesContainer {
   width: 100%;
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -38,7 +48,12 @@
   position: absolute;
   right: 100px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -50,22 +65,32 @@
   position: absolute;
   left: 100px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
 .previous:hover {
+  -webkit-filter: brightness(80%);
   filter: brightness(80%);
 }
 
 .next:hover {
+  -webkit-filter: brightness(80%);
   filter: brightness(80%);
 }
 
 .dotsContainer {
   width: 54px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -79,10 +104,13 @@
 
 .fade-transition {
   opacity: 0;
+  -webkit-transition: opacity 1s cubic-bezier(0.37, 0, 0.63, 1);
+  -o-transition: opacity 1s cubic-bezier(0.37, 0, 0.63, 1);
   transition: opacity 1s cubic-bezier(0.37, 0, 0.63, 1);
 }
 
 .active {
+  -webkit-filter: brightness(80%);
   filter: brightness(80%);
 }
 
@@ -107,8 +135,15 @@
   .partnerImagesContainer {
     width: 100%;
     height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -128,6 +163,8 @@
     width: 84px;
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: 24px;
   }

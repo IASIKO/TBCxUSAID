@@ -13,7 +13,9 @@
 
 .coursesGridContainer {
   margin-top: 66px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto 40px auto 40px auto;
   grid-template-columns: auto auto auto;
   gap: 40px;
   color: #f4f4f4;
@@ -45,7 +47,11 @@
 
 .courseDescription div {
   margin-top: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: end;
 }
 
@@ -55,10 +61,13 @@
   font-size: 16px;
   font-weight: 500;
   margin-left: 15px;
+  -webkit-transition: 0.4s ease 0s;
+  -o-transition: 0.4s ease 0s;
   transition: 0.4s ease 0s;
 }
 
 .courseDescription div a:hover {
+  -webkit-filter: brightness(80%);
   filter: brightness(80%);
 }
 
@@ -91,6 +100,7 @@
 
   .coursesGridContainer {
     margin-top: 36px;
+    -ms-grid-columns: auto;
     grid-template-columns: auto;
     gap: 30px;
   }
