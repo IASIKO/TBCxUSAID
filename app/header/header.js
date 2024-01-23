@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let header = document.querySelector(".headerWrapper");
-  let headerHeight = header.offsetHeight;
-  let body = document.body;
+  const header = document.querySelector(".headerWrapper");
+  const headerHeight = header.offsetHeight;
+  const body = document.body;
 
   window.addEventListener("scroll", function () {
     let scrollTop = window.scrollY;

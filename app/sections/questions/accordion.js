@@ -1,6 +1,6 @@
-let acc = document.querySelectorAll(".questionBox");
-let arrow = document.querySelectorAll(".arrow");
-let answerTexts = document.querySelectorAll(".answerText");
+const acc = document.querySelectorAll(".questionBox");
+const arrow = document.querySelectorAll(".arrow");
+const answerTexts = document.querySelectorAll(".answerText");
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
