@@ -10,9 +10,6 @@ This project is a single-page application built using vanilla JavaScript, HTML, 
 
 ## Sections
 
-# Jumbotron #
-The Jumbotron section serves as a prominent display area, providing a visually appealing introduction to the page. The data for this section is sourced from a predefined array in JavaScript, and the content is dynamically mapped to create a seamless user experience.
-
 Courses
 In the Courses section, a data array is utilized to display various courses. The information is dynamically mapped using JavaScript to ensure easy maintenance and scalability.
 
