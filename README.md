@@ -2,7 +2,7 @@
 
 This project is a single-page application built using vanilla JavaScript, HTML, and CSS. The application features a header, footer, and multiple sections.
 
-# app structure
+# Project structure
 
 1. app folder - JavaScript files
 2. assets folder- image and font resources
@@ -22,6 +22,9 @@ The Accordion section is implemented with a collapse transition for a user-frien
 Header Mobile Version
 For the mobile version, a burger menu is incorporated with excellent transform transitions. This responsive design ensures a seamless and visually pleasing experience for users on various devices.
 
+Responsive
+This project boasts excellent responsiveness, ensuring a seamless and visually pleasing experience across various devices, enhancing usability on smartphones and tablets.
+
 Browser Compatibility
 The CSS is written to be compatible with the following web browsers:
 
@@ -31,6 +34,7 @@ Edge
 Safari
 
 The application is designed to provide a consistent and optimized experience across these browsers.
+
 
 ## Usage
 
