@@ -5,8 +5,43 @@ This project is a single-page application built using vanilla JavaScript, HTML, 
 # Project structure
 
 1. app folder - JavaScript files
+
+        header folder - header.js 
+
+        sections folder - 
+
+                courses folder - courses.js
+
+                partners folder - slider.js
+
+                questions folder - accordion.js
 2. assets folder- image and font resources
+
+        fonts folder - file.woff2
+
+        images folder - 
+
+                courses folder - courses images
+
+                icons folder - icons
+
+                partners folder - partner images
+
 3. css folder - CSS files
+
+        header folder - header.css
+
+        sections folder - 
+
+                courses.css
+
+                jumbotrons.css
+
+                partners.css
+
+                questions.css
+
+        footer folder - footer.css
 
 ## Sections
 

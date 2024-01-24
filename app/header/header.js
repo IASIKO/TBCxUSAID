@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       : header.classList.remove("headerTransparent");
   });
 
-  // BURGERBAR
+  // BURGER MENU
   const burgerMenu = document.querySelector(".burgerMenuContainer");
   const lines = document.querySelectorAll(".line");
   const closeBackdrop = document.querySelector(".backdrop");
