@@ -59,7 +59,3 @@ For the mobile version, a burger menu is incorporated with smooth transform tran
 
 1. **Clone the Repository**: Use the command `git clone https://github.com/IASIKO/TBCxUSAID`.
 2. **Open index.html**: Access the application by opening the `index.html` file in your preferred web browser.
-
-## Conclusion
-
-The TBC x USAID Single-Page Application demonstrates a professional and modular approach to web development, utilizing a stack of technologies to deliver a responsive, visually appealing, and user-friendly experience. The project's structure and features make it easy to maintain and scale in the future.
