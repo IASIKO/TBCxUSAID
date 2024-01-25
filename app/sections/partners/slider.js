@@ -57,6 +57,7 @@ function updateSlider(index) {
         const img = document.createElement("img");
         img.src = slides[i][j].imgUrl;
         img.alt = `Partner ${slides[i][j].id}`;
+        img.style.opacity = 0;
         img.classList.add("fade-transition");
         sliderContainer.appendChild(img);
         void img.offsetWidth;
@@ -70,12 +71,6 @@ function updateSlider(index) {
   index === slides.length - 1
     ? (imgsContainer.style.justifyContent = "center")
     : (imgsContainer.style.justifyContent = "space-between");
-
-  setTimeout(() => {
-    for (const img of sliderContainer.querySelectorAll("img")) {
-      img.style.opacity = 0;
-    }
-  }, 2500);
 }
 
 function goToSlide(index) {
@@ -130,4 +125,15 @@ function handleTouchEnd(event) {
 createDots();
 updateSlider(currentSlide);
 
-setInterval(nextSlide, 3000);
+let intervalId = setInterval(nextSlide, 3000);
+
+function pauseSlider() {
+  clearInterval(intervalId);
+}
+
+function resumeSlider() {
+  intervalId = setInterval(nextSlide, 3000);
+}
+
+imgsContainer.addEventListener("mouseover", pauseSlider);
+imgsContainer.addEventListener("mouseleave", resumeSlider);
