@@ -75,7 +75,7 @@ function updateSlider(index) {
     for (const img of sliderContainer.querySelectorAll("img")) {
       img.style.opacity = 0;
     }
-  }, 2900);
+  }, 2500);
 }
 
 function goToSlide(index) {
