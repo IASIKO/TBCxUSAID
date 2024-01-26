@@ -57,6 +57,31 @@ document.addEventListener("DOMContentLoaded", function () {
       a.textContent = page;
       a.classList.add(className);
 
+      if (page === "TBC x USAID") {
+        a.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          const scrollSpeed = window.innerWidth < 700 ? 4 : 30;
+          const targetPosition = 0;
+          const currentPosition = window.scrollY;
+          const distance = targetPosition - currentPosition;
+          const numSteps = Math.abs(distance / scrollSpeed);
+          const stepSize = distance / numSteps;
+
+          function animateScroll() {
+            if (distance > 0 && window.scrollY < targetPosition) {
+              window.scrollBy(0, stepSize);
+              requestAnimationFrame(animateScroll);
+            } else if (distance < 0 && window.scrollY > targetPosition) {
+              window.scrollBy(0, stepSize);
+              requestAnimationFrame(animateScroll);
+            }
+          }
+
+          animateScroll();
+        });
+      }
+
       page === "TBC x USAID" && a.classList.add("activePage");
 
       li.appendChild(a);
