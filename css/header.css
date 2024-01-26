@@ -24,6 +24,11 @@
   opacity: 0.95;
 }
 
+.headerHidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
 .logo {
   width: 182px;
   height: 40px;
@@ -234,6 +239,10 @@
 @media screen and (max-width: 600px) {
   .headerWrapper {
     padding: 0 25px;
+  }
+
+  .headerHidden {
+    position: fixed;
   }
   .navList {
     display: none;

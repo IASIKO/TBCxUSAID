@@ -1,10 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector(".headerWrapper");
+  const burgerMenu = document.querySelector(".burgerMenuContainer");
+  const lines = document.querySelectorAll(".line");
+  const closeBackdrop = document.querySelector(".backdrop");
+  const navContainer = document.querySelector(".navList");
+  const sidebarContainer = document.querySelector(".sidebarNavList");
   const headerHeight = header.offsetHeight;
   const body = document.body;
+  let lastScrollTop = 0;
 
   window.addEventListener("scroll", function () {
     let scrollTop = window.scrollY;
+
+    if (window.innerWidth < 600) {
+      if (scrollTop > lastScrollTop && scrollTop > headerHeight) {
+        header.classList.add("headerHidden");
+        sidebarContainer.style.display = "none";
+      } else {
+        header.classList.remove("headerHidden");
+        sidebarContainer.style.display = "flex";
+      }
+
+      lastScrollTop = scrollTop;
+    } else {
+      header.classList.remove("headerHidden");
+    }
 
     scrollTop > headerHeight
       ? header.classList.add("headerTransparent")
@@ -12,9 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // BURGER MENU
-  const burgerMenu = document.querySelector(".burgerMenuContainer");
-  const lines = document.querySelectorAll(".line");
-  const closeBackdrop = document.querySelector(".backdrop");
 
   burgerMenu.addEventListener("click", function () {
     burgerMenu.classList.toggle("active");
@@ -32,9 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function createNavList() {
     const screenWidth = window.innerWidth;
-
-    const navContainer = document.querySelector(".navList");
-    const sidebarContainer = document.querySelector(".sidebarNavList");
 
     if (navContainer && sidebarContainer) {
       navContainer.innerHTML = "";
