@@ -22,10 +22,10 @@ The project is organized into folders that separate concerns, making it modular 
    - **images folder** - Organized into sub-folders for courses, icons, and partner images.
 
 3. **css folder** - Contains CSS files for styling:
+   - **style.css** - Root styles for the app, imported all css files.
    - **header.css** - Styles for the header.
    - **footer.css** - Styles for the footer.
    - **sections folder** - Includes individual CSS files for each section.
-   - **style.css** - Root styles for the app, imported all css files.
 
 ## Technologies Used
 
