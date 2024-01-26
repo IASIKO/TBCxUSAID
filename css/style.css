@@ -4,9 +4,15 @@
 @import "./sections/partners.css";
 @import "./sections/questions.css";
 @import "./footer.css";
+
 @font-face {
-  font-family: mainFont;
-  src: url(../assets/fonts/file.woff2);
+  font-family: "wfont";
+  src: url("../assets/fonts/file.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "wfont-bold";
+  src: url("../assets/fonts/wfont-bold.woff2") format("woff2");
 }
 
 * {
@@ -14,7 +20,10 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: mainFont;
+}
+
+body {
+  font-family: "wfont", "wfont-bold", sans-serif;
 }
 
 ul {
