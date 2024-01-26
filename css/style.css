@@ -1,9 +1,9 @@
-@import "./header/header.css";
+@import "./header.css";
 @import "./sections/jumbotron.css";
 @import "./sections/courses.css";
 @import "./sections/partners.css";
 @import "./sections/questions.css";
-@import "./footer/footer.css";
+@import "./footer.css";
 @font-face {
   font-family: mainFont;
   src: url(../assets/fonts/file.woff2);

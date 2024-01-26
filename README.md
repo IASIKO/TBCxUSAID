@@ -10,11 +10,11 @@ The project is organized into folders that separate concerns, making it modular 
 
 1. **app folder** - Houses JavaScript files for specific sections:
 
-   - **header folder** - Contains the JavaScript logic for the header.
+   - **header.js** - Contains the JavaScript logic for the header.
    - **sections folder** - Includes sub-folders for each section:
-     - **courses folder** - Manages the dynamic display of various courses.
-     - **partners folder** - Handles the slider showcasing different partners.
-     - **questions folder** - Implements the accordion feature for organized information presentation.
+     - **courses.js** - Manages the dynamic display of various courses.
+     - **slider.js** - Handles the slider showcasing different partners.
+     - **accordion.js** - Implements the accordion feature for organized information presentation.
 
 2. **assets folder** - Stores image and font resources for the application:
 
@@ -22,9 +22,10 @@ The project is organized into folders that separate concerns, making it modular 
    - **images folder** - Organized into sub-folders for courses, icons, and partner images.
 
 3. **css folder** - Contains CSS files for styling:
-   - **header folder** - Styles for the header.
+   - **header.css** - Styles for the header.
+   - **footer.css** - Styles for the footer.
    - **sections folder** - Includes individual CSS files for each section.
-   - **footer folder** - Styles for the footer.
+   - **style.css** - Root styles for the app, imported all css files.
 
 ## Technologies Used
 
