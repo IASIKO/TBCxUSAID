@@ -84,6 +84,7 @@ function nextSlide() {
     : (currentSlide = currentSlide + 1);
 
   updateSlider(currentSlide);
+  pauseResumeSlider();
 }
 
 function previousSlide() {
@@ -91,10 +92,16 @@ function previousSlide() {
     ? (currentSlide = slides.length - 1)
     : (currentSlide = currentSlide - 1);
   updateSlider(currentSlide);
+  pauseResumeSlider();
 }
 
 nextBtn.addEventListener("click", nextSlide);
 previousBtn.addEventListener("click", previousSlide);
+
+function pauseResumeSlider() {
+  clearInterval(intervalId);
+  intervalId = setInterval(nextSlide, 3000);
+}
 
 if (window.matchMedia("(max-width: 600px)").matches) {
   sliderContainer.addEventListener("touchstart", handleTouchStart, false);
